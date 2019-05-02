@@ -161,7 +161,7 @@ should give you an idea which ones can.
  */
 
 #include "SevSeg.h"
-#define CLR 32
+#define CLR 16
 #define NUM_DIGITS 6
 
 //Create an instance of the object.
@@ -173,17 +173,12 @@ int deciSecond = 0;
 
 void clear_display () {
     char CLR_String[NUM_DIGITS+1] = {CLR,CLR,CLR,CLR,CLR,CLR};
-//    
-//    for(int a = 0; a <= NUM_DIGITS; a++) {
-//    
-//    CLR_String[a] = CLR; //CLR is space
-//    }
+
     myDisplay.DisplayString(CLR_String, 0);
   
 }
 
-void setup()
-{
+void setup() {
 
   int displayType = COMMON_CATHODE; //Your display is either common cathode or common anode
 
@@ -217,64 +212,54 @@ void setup()
 }
 
 void loop() {
-  char tempString[7] = {49,'9','7','0','`','S'}; //Used for sprintf
-  
+  char tempString[7] = {'T','h','i','s','I','s'}; //Used for sprintf
+
   for(int i =0;i<100;i++) {
     myDisplay.DisplayString(tempString, 0); //(numberToDisplay, decimal point location)
     delay(10);
   }
+
+  for(int i =0;i<100;i++) {
+
+    tempString[0] = 16; //16 is space
+    tempString[1] = 'T';
+    tempString[2] = 'H';
+    tempString[3] = 'E';
+    tempString[4] = 16;
+    tempString[5] = 16;
   
-  clear_display ();
+    myDisplay.DisplayString(tempString, 0);
+    
+    delay(10);
+  }
+for(int i =0;i<100;i++) {
+  tempString[0] = 'R'; 
+  tempString[1] = 'E';
+  tempString[2] = 'P';
+  tempString[3] = 'A';
+  tempString[4] = 'I';
+  tempString[5] = 'R';
+
+  myDisplay.DisplayString(tempString, 0);
+   
+  delay(6);
+}
+  for(int i =0;i<100;i++) {
+      
+  tempString[0] = 16; //16 is blank
+  tempString[1] = 'C';
+  tempString[2] = 'A';
+  tempString[3] = 'F';
+  tempString[4] = 'E';
+  tempString[5] = 16;
+    
+  myDisplay.DisplayString(tempString, 0);
+    
+  delay(6);
+  }
+  delay(5);
+
+  clear_display (); //clears display
   delay(1000);
-  
-
-  
-//  char tempString[7] = {'T','h','i','s','I','s'}; //Used for sprintf
-//  
-//  for(int i =0;i<100;i++) {
-//    myDisplay.DisplayString(tempString, 0); //(numberToDisplay, decimal point location)
-//    delay(10);
-//  }
-//  
-//  for(int i =0;i<100;i++) {
-//    
-//    tempString[0] = 16; //16 is space
-//    tempString[1] = 'T';
-//    tempString[2] = 'H';
-//    tempString[3] = 'E';
-//    tempString[4] = 16;
-//    tempString[5] = 16;
-//    
-//    myDisplay.DisplayString(tempString, 0);
-//    
-//    delay(10);
-//  }
-//   for(int i =0;i<100;i++) {
-//    tempString[0] = 'R'; 
-//    tempString[1] = 'E';
-//    tempString[2] = 'P';
-//    tempString[3] = 'A';
-//    tempString[4] = 'I';
-//    tempString[5] = 'R';
-//    
-//    myDisplay.DisplayString(tempString, 0);
-//    
-//    delay(6);
-//  }
-//    for(int i =0;i<100;i++) {
-//      
-//      tempString[0] = 16; //16 is blank
-//      tempString[1] = 'C';
-//      tempString[2] = 'A';
-//      tempString[3] = 'F';
-//      tempString[4] = 'E';
-//      tempString[5] = 16;
-//      
-//      myDisplay.DisplayString(tempString, 0);
-//      
-//      delay(6);
-//    }
-//    delay(5);
-
 }
 
