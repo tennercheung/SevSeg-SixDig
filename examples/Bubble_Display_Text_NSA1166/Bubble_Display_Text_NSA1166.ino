@@ -194,7 +194,7 @@ void setup() {
        
        //Declare what pins are connected to the segments (anodes)
        int segA = 8; //Pin D8
-       int segB = 9; //Pin D8
+       int segB = 9; //Pin D9
        int segC = 11; //Pin D11
        int segD = 13; //Pin D13
        int segE = 12; //Pin D12
