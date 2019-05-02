@@ -1,6 +1,6 @@
 # SevSeg-SixDig
 
-With this library you can implement the same tasks as the original SevSeg library. In addition you can drive the an NSA1166 7-seg 6 digit LED array [Inspired by 8bitkick's SevSegPlus] using an Arduino Nano, UNO, Mega, etc. (pretty much you have enough pins) Below is one of the first tests driven by a Nano.
+With this library you can implement the same tasks as the original SevSeg library. In addition you can drive the an NSA1166 7-seg 6 digit LED array [Inspired by 8bitkick's SevSegPlus] using an Arduino Nano, UNO, Mega, etc. (pretty much if you have enough pins) Below is one of the first tests driven by a Nano.
 
 ![Alt Text](https://github.com/tennercheung/SevSeg-SixDig/blob/master/examples/example.gif)
 
