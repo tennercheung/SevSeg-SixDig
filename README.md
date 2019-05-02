@@ -2,14 +2,15 @@
 
 With this library you can implement the same tasks as the original SevSeg library. In addition you can drive the an NSA1166 7-seg 6 digit LED array [Inspired by 8bitkick's SevSegPlus] using an Arduino Nano, UNO, Mega, etc. (pretty much you have enough pins) Below is one of the first tests driven by a Nano.
 
-Hardware Setup
---------------
+
 ## Current Limitations
 
 - Omits the segments of some numbers and letters usually the top left of the 7 seg
 - Text must be typed as string of chars
 
-* **[Display I used] NSA1166 7-seg 6 digit LED array (https://www.jameco.com/Jameco/Products/ProdDS/2210976NAT.pdf)
+## Hardware Setup
+
+* **[Display I used]: NSA1166 7-seg 6 digit LED array (https://www.jameco.com/Jameco/Products/ProdDS/2210976NAT.pdf)
 
 
 * NSA1166 with male headers
@@ -29,7 +30,7 @@ Use a 220ohm+ limiting resistor in series with each of these digit pins
 |digit5     |6     |Pin 14|
 |digit6     |7     |Pin 16|
 
-The segment pins are hooked directly to the Arduino
+The segment pins are hooked directly to the Arduino Nano
 
 | |Arduino  |NSA1166|
 | :------------- | :----------: | -----------: |
