@@ -13,6 +13,7 @@ With this library you can implement the same tasks as the original SevSeg librar
 
 * **[Display I used]: NSA1166 7-seg 6 digit LED array (https://www.jameco.com/Jameco/Products/ProdDS/2210976NAT.pdf)
 
+![Alt Text](https://github.com/tennercheung/SevSeg-SixDig/blob/master/examples/NS1166_frizting_picture.png)
 
 * NSA1166 with male headers
 * inserted into breadboard
