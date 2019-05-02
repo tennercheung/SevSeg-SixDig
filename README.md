@@ -7,7 +7,7 @@ With this library you can implement the same tasks as the original SevSeg librar
 ## Current Limitations
 
 - Omits the segments of some numbers and letters usually the top left of the 7 seg
-- Text must be typed as string of chars
+- Text must be typed as array of chars
 
 ## Hardware Setup
 
